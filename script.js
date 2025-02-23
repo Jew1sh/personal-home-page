@@ -83,17 +83,3 @@ togglePassword.addEventListener("click", function () {
   // Emoji değişimi
   this.textContent = type === "password" ? "👁️" : "🙈";
 });
-
-// Login işlemi
-document
-  .getElementById("loginForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault(); // Sayfa yenilenmesini engelle
-
-    // Kullanıcı adı ve şifre kontrolü
-    const username = document.querySelector('input[name="username"]').value;
-    const password = document.querySelector('input[name="password"]').value;
-
-    // Kullanıcıyı doğru sayfaya yönlendirme
-    window.location.href = "http://127.0.0.1:5500/index.html"; // Yerel dosya yoluna yönlendirme
-  });
